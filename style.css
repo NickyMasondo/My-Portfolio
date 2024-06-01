@@ -1,3 +1,43 @@
+h1 {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.h1,
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -8,15 +48,6 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-}
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-user agent stylesheet body {
-  display: block;
-  margin: 8px;
 }
 :root {
   --bs-blue: #0d6efd;
@@ -60,24 +91,4 @@ user agent stylesheet body {
 ::after,
 ::before {
   box-sizing: border-box;
-}
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-user agent stylesheet p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
