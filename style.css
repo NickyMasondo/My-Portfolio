@@ -23,3 +23,15 @@ body {
 user agent stylesheet div {
   display: block;
 }
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet head {
+  display: none;
+}
+body {
+  display: block;
+  margin: 8px;
+}
