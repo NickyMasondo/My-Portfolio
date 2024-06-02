@@ -1,94 +1,140 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", san-serif;
+}
+.bg-light {
+  background: #f8f9fa;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar > .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-light .navbar-brand {
+  font-family: var(--heading-font-family);
+  color: #6c63ff;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 h1 {
   color: black;
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
-.h1,
-h1 {
-  font-size: calc(1.375rem + 1.5vw);
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
 }
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-user agent stylesheet h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  color: black;
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
-body {
-  margin: 0;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 1rem;
-  font-weight: 400;
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
+  font-size: 24px;
 }
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
-*,
-::after,
-::before {
-  box-sizing: border-box;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
-*,
-::after,
-::before {
-  box-sizing: border-box;
+.col {
+  flex: 1 0 0%;
+}
+@media (max-width: 900px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 44px;
+  }
+}
+h2 {
+  font-size: 64px;
+}
+.text-muted {
+  color: #6c757d;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+footer {
+  margin: 50px 0;
+}
+footer .work-box {
+  background: var(--secondary-color);
+  border-radius: 6px;
+}
+footer h4 {
+  font-size: 30px;
+}
+footer .email-link {
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+}
+footer .github {
+  font-size: 12px;
+}
+footer .github-link {
+  text-decoration: none;
+  color: var(--branding-color);
 }
